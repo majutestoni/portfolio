@@ -1,0 +1,24 @@
+@import '../../../../assets/variables.scss';
+
+a {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  color: $secondary-color;
+
+}
+
+a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px; /* Ajuste a altura da sublinha conforme necessário */
+  width: 0;
+  height: 0.1rem; /* Ajuste a espessura da sublinha conforme necessário */
+  background-color:  $secondary-color; /* Cor da sublinha */
+  transition: width 0.3s ease; /* Duração e transição da animação */
+}
+
+a:hover::after {
+  width: 100%; /* A sublinha se expandirá da esquerda para a direita ao passar o mouse */
+}

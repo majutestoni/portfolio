@@ -1,0 +1,30 @@
+<div class="contact">
+  <app-title [title]="'E agora?'" [topic]="'0100'"></app-title>
+  <div class="data">
+    <p>
+      Primeiramente, obrida pela sua visitar e caso queira dar um
+      feedback/sugestão ou somente entrar em contato comigo (apropósito, eu
+      adoro tomar café), existem algumas formas:
+    </p>
+
+    <app-button  (click)="openEmail()" [text]="'Email'"></app-button>
+
+    <p class="mt-5">E tambem estou sempre por outras redes:</p>
+    <div class="row">
+      <div
+        class="badge-base LI-profile-badge mt-5 col-6"
+        data-locale="pt_BR"
+        data-size="large"
+        data-theme="dark"
+        data-type="HORIZONTAL"
+        data-vanity="majutestoni"
+        data-version="v1"
+      >
+        <a
+          class="badge-base__link LI-simple-link"
+          href="https://br.linkedin.com/in/majutestoni?trk=profile-badge"
+        ></a>
+      </div>
+    </div>
+  </div>
+</div>

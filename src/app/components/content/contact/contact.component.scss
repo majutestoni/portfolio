@@ -1,0 +1,20 @@
+@import '../../../../assets/variables.scss';
+
+.contact{
+  width: 100%;
+  padding: 5%;
+  color: $primary-color;
+}
+
+
+.data{
+  padding: 5%;
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    p{
+      font-size: 1.3rem;
+    text-align: center;
+    }
+}

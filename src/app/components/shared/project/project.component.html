@@ -1,0 +1,26 @@
+<div class="card">
+  <div class="header">
+    <h1>{{ title }}</h1>
+    <div class="links">
+      <div *ngIf="linkProject.length > 1" class="github">
+        <a rel="noreferrer noopener" target="_blank" [href]="linkProject" >
+          <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        </a>
+      </div>
+      <div>
+        <a rel="noreferrer noopener" target="_blank" [href]="linkGithub">
+          <i class="fa-brands fa-github"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="description">
+    <p>{{ description }}</p>
+  </div>
+  <div class="tecnologies">
+    <ul>
+      <li *ngFor="let item of tecnologies">{{ item }}</li>
+    </ul>
+  </div>
+</div>

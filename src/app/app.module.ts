@@ -3,6 +3,14 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { HeaderModule } from './components/header/header.module';
+import { SideLeftModule } from './components/side-left/side-left.module';
+import { FooterModule } from './components/footer/footer.module';
+import { WelcomeModule } from './components/content/welcome/welcome.module';
+import { AboutModule } from './components/content/about/about.module';
+import { ContactModule } from './components/content/contact/contact.module';
+import { ProjectsModule } from './components/content/projects/projects.module';
+import { WorkModule } from './components/content/work/work.module';
 
 @NgModule({
   declarations: [
@@ -10,7 +18,15 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HeaderModule,
+    SideLeftModule,
+    FooterModule,
+    WelcomeModule,
+    AboutModule,
+    ContactModule,
+    ProjectsModule,
+    WorkModule
   ],
   providers: [],
   bootstrap: [AppComponent]

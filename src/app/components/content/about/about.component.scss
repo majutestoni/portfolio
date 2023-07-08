@@ -1,0 +1,129 @@
+@import "../../../../assets/variables.scss";
+
+body {
+  padding: 5%;
+}
+
+.style-about {
+  max-width: 900px;
+  color: $primary-color;
+
+  .inner {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    grid-gap: 50px;
+    height: 100vh;
+
+    @media (max-width: 768px) {
+      display: block;
+    }
+  }
+}
+
+a {
+  color: $secondary-color;
+}
+
+.style-text {
+  padding: 5%;
+  ul {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(140px, 200px));
+    grid-gap: 0 10px;
+    padding: 0;
+    margin: 20px 0 0 0;
+    overflow: hidden;
+    list-style: none;
+
+    li {
+      position: relative;
+      margin-bottom: 10px;
+      padding-left: 20px;
+      font-size: 20px;
+
+      &:before {
+        content: "↣";
+        position: absolute;
+        left: 0;
+        color: $secondary-color;
+        font-size: 20px;
+        line-height: 12px;
+      }
+    }
+  }
+}
+
+.style-pic {
+  position: relative;
+  max-width: 300px;
+
+  @media (max-width: 768px) {
+    margin: 50px auto 0;
+    width: 70%;
+  }
+
+  .wrapper {
+    display: block;
+    position: relative;
+    width: 100%;
+    border-radius: 16px;
+    background-color: $secondary-color;
+    transition: 0.2s;
+
+    &:hover,
+    &:focus {
+      outline: 0;
+      transform: translate(-4px, -4px);
+
+      &:after {
+        transform: translate(8px, 8px);
+      }
+
+      .img {
+        filter: none;
+        mix-blend-mode: normal;
+      }
+    }
+
+    .img {
+      position: relative;
+      border-radius: 16px;
+      mix-blend-mode: multiply;
+      filter: grayscale(100%) contrast(1);
+      transition: 0.2s;
+      z-index: 3;
+    }
+
+    &:before,
+    &:after {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      border-radius: 16px;
+      transition: 0.2s;
+    }
+
+    &:before {
+      top: 0;
+      left: 0;
+      background-color: $secondary-color;
+      mix-blend-mode: screen;
+      z-index: 3;
+    }
+
+    &:after {
+      border: 2px solid $secondary-color;
+      top: 14px;
+      left: 14px;
+      z-index: 0;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .about .inner {
+    display: block;
+  }
+}

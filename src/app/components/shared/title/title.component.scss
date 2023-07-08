@@ -1,0 +1,26 @@
+@import "../../../../assets/variables.scss";
+  @import url('https://fonts.googleapis.com/css2?family=Martian+Mono:wght@400;600&family=Roboto&display=swap');
+h2 {
+  color: $primary-color-title;
+  font-family: 'Martian Mono', monospace;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  font-size: 25px;
+}
+
+label {
+  list-style: none;
+  font-family: 'Martian Mono', monospace;
+  font-weight: 400;
+  color: $secondary-color;
+  font-size: 20px;
+  margin-right: 2%;
+}
+
+.divider {
+  background-color: $primary-color;
+  margin-left: 2%;
+  width: 30%;
+  height: 1px;
+}

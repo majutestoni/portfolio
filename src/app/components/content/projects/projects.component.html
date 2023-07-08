@@ -1,0 +1,17 @@
+<body>
+  <app-title [title]="'Projetos'" [topic]="'0100'"></app-title>
+  <div data-aos="fade-up"
+  data-aos-anchor-placement="top-bottom" data-aos-duration="2000" class="container">
+    <div class="row">
+        <div *ngFor="let project of projects" class=" col-md-6 col-sm-12 projeto">
+          <app-project
+            [title]="project.title"
+            [linkGithub]="project.linkGithub"
+            [linkProject]="project.linkProject"
+            [description]="project.description"
+            [tecnologies]="project.tecnologies"
+          ></app-project>
+        </div>
+    </div>
+  </div>
+</body>

@@ -1,0 +1,34 @@
+@import "../../../assets/variables.scss";
+
+body {
+  width: 90%;
+  height: 15vh;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+
+  .links {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+
+  article{
+    color: $primary-color-title;
+  }
+
+}
+
+a {
+  font-size: 1.5rem;
+  color: $primary-color-title;
+  margin-top: 1.5rem;
+  transition: 0.2s;
+}
+
+a:hover {
+  transform: translateY(-1vh);
+  color: $secondary-color;
+}

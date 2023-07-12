@@ -18,33 +18,7 @@ $arrow-line-width: 4px;
     color: $primary-color-title;
   }
 
-  ul {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(140px, 200px));
-    grid-gap: 0 10px;
-    padding: 0;
-    margin: 20px 0 0 0;
-    overflow: hidden;
-    list-style: none;
 
-    li {
-      position: relative;
-      margin-bottom: 10px;
-      padding-left: 20px;
-      font-size: 20px;
-      display: flex;
-      align-items: center;
-
-      &:before {
-        content: "⇀";
-        position: absolute;
-        left: 0;
-        color: $secondary-color;
-        font-size: 20px;
-        line-height: 12px;
-      }
-    }
-  }
 }
 
 .more {

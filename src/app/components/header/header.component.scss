@@ -133,6 +133,10 @@ header {
   width: min(75vw, 400px);
 }
 
+.burguer{
+  display: none;
+}
+
 @media screen and (max-width: 835px) {
   .big-screen {
     display: none;

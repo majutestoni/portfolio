@@ -1,18 +1,29 @@
-import { Component, EventEmitter, Output } from '@angular/core';
+import { Component, EventEmitter, HostListener, Output } from '@angular/core';
 
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
-  styleUrls: ['./header.component.scss']
+  styleUrls: ['./header.component.scss'],
 })
 export class HeaderComponent {
-  public open = false
+  public open = false;
+  innerWidth = 0;
 
   @Output() menuIsOpen = new EventEmitter();
 
-  openMenu(){
-    this.open = !this.open
+  @HostListener('window:resize', ['$event'])
+  onResize(event: Event) {
+    this.innerWidth = window.innerWidth;
 
-    this.menuIsOpen.emit(this.open)
+    if (this.innerWidth > 830) {
+      this.open = false;
+      this.menuIsOpen.emit(this.open);
+    }
+  }
+
+  openMenu() {
+    this.open = !this.open;
+
+    this.menuIsOpen.emit(this.open);
   }
 }

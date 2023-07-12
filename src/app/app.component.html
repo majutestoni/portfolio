@@ -1,13 +1,21 @@
 <app-header (menuIsOpen)="menuIsOpen($event)"></app-header>
 <div class="conteudo">
   <div class=" {{ open ? 'fundo open' : '' }}"></div>
-  <app-welcome></app-welcome>
-  <app-about></app-about>
-  <div>
+  <section>
+    <app-welcome></app-welcome>
+  </section>
+  <section>
+    <app-about></app-about>
+  </section>
+  <section>
     <app-work></app-work>
-  </div>
-  <app-projects></app-projects>
-  <app-contact></app-contact>
+  </section>
+  <section>
+    <app-projects></app-projects>
+  </section>
+  <section>
+    <app-contact></app-contact>
+  </section>
 </div>
 <div class="side-left"><app-side-left></app-side-left></div>
 <footer>

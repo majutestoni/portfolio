@@ -1,81 +1,102 @@
-<!-- work.component.html -->
-<div class="row">
-  <div class="col-4">
-    <div id="list-example" class="list-group">
-      <a class="list-group-item list-group-item-action" href="#list-item-1"
-        >Item 1</a
-      >
-      <a class="list-group-item list-group-item-action" href="#list-item-2"
-        >Item 2</a
-      >
+<div>
+  <app-title [title]="'Experiência'" [topic]="'010'"></app-title>
+
+  <div class="row     align-items-center">
+    <div class="timeline col-2">
+
+      <div class="divider"></div>
+      <span>○</span>
+      <div class="divider"></div>
+      <span>○</span>
+      <div class="divider"></div>
+      <span>○</span>
+      <div class="divider"></div>
+
     </div>
-  </div>
-  <div class="col-8">
-    <div class="scrollspy-example" tabindex="0">
-      <h4 id="list-item-1">Item 1</h4>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce dui enim,
-        consequat ac augue sit amet, laoreet venenatis metus. Vivamus purus
-        elit, cursus vitae pellentesque ut, suscipit vitae elit. Sed massa nibh,
-        venenatis ac arcu sit amet, suscipit vehicula leo. Curabitur massa
-        augue, egestas non nisl at, tincidunt tincidunt mauris. Praesent rhoncus
-        non velit eget consectetur. Nam euismod turpis ante, ac venenatis nisi
-        dapibus non. Proin sodales massa ligula, quis aliquam dolor lacinia
-        vitae. Vivamus euismod ex id venenatis varius. Maecenas et metus
-        posuere, dapibus mauris id, malesuada ante. Nulla facilisi. Etiam
-        placerat posuere diam eu ultrices. Sed sed efficitur mi. Pellentesque
-        cursus nisi at orci bibendum, non vulputate tellus dictum. Duis
-        porttitor tincidunt mauris, id auctor mauris egestas id. Vivamus
-        ullamcorper ex sit amet tempus imperdiet. Pellentesque blandit ante sit
-        amet eros semper, vitae porta est posuere. Donec commodo in sapien eget
-        bibendum. Nam bibendum arcu blandit semper ultrices. Morbi lobortis
-        magna tempor, tincidunt mauris quis, condimentum mi. Quisque volutpat
-        posuere cursus. Nunc vel sollicitudin urna, laoreet congue orci. Morbi
-        congue aliquam elit et sollicitudin. Integer semper blandit massa sit
-        amet faucibus. Phasellus mi ligula, tempus a risus vitae, iaculis
-        rhoncus elit. Aliquam scelerisque lorem orci, facilisis ultrices massa
-        facilisis at. Quisque efficitur ut urna ut pulvinar. Vestibulum ligula
-        purus, suscipit ut placerat vitae, vehicula non nisl. Proin sed dolor
-        metus. Etiam a dapibus velit. Phasellus non lorem arcu. Aliquam neque
-        mi, dictum at orci ut, feugiat vulputate urna. Vivamus a volutpat orci,
-        sit amet cursus dolor. Quisque tincidunt varius mauris non convallis.
-        Cras sed eros pharetra, blandit sapien id, convallis felis. Morbi
-        semper, quam vel condimentum semper, augue tellus accumsan sapien, vel
-        semper libero libero at mi. Nam at leo nec nunc lacinia luctus. Morbi in
-        odio vel tortor vestibulum vulputate eget vitae ex.
-      </p>
-      <h4 id="list-item-2">Item 2</h4>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce dui enim,
-        consequat ac augue sit amet, laoreet venenatis metus. Vivamus purus
-        elit, cursus vitae pellentesque ut, suscipit vitae elit. Sed massa nibh,
-        venenatis ac arcu sit amet, suscipit vehicula leo. Curabitur massa
-        augue, egestas non nisl at, tincidunt tincidunt mauris. Praesent rhoncus
-        non velit eget consectetur. Nam euismod turpis ante, ac venenatis nisi
-        dapibus non. Proin sodales massa ligula, quis aliquam dolor lacinia
-        vitae. Vivamus euismod ex id venenatis varius. Maecenas et metus
-        posuere, dapibus mauris id, malesuada ante. Nulla facilisi. Etiam
-        placerat posuere diam eu ultrices. Sed sed efficitur mi. Pellentesque
-        cursus nisi at orci bibendum, non vulputate tellus dictum. Duis
-        porttitor tincidunt mauris, id auctor mauris egestas id. Vivamus
-        ullamcorper ex sit amet tempus imperdiet. Pellentesque blandit ante sit
-        amet eros semper, vitae porta est posuere. Donec commodo in sapien eget
-        bibendum. Nam bibendum arcu blandit semper ultrices. Morbi lobortis
-        magna tempor, tincidunt mauris quis, condimentum mi. Quisque volutpat
-        posuere cursus. Nunc vel sollicitudin urna, laoreet congue orci. Morbi
-        congue aliquam elit et sollicitudin. Integer semper blandit massa sit
-        amet faucibus. Phasellus mi ligula, tempus a risus vitae, iaculis
-        rhoncus elit. Aliquam scelerisque lorem orci, facilisis ultrices massa
-        facilisis at. Quisque efficitur ut urna ut pulvinar. Vestibulum ligula
-        purus, suscipit ut placerat vitae, vehicula non nisl. Proin sed dolor
-        metus. Etiam a dapibus velit. Phasellus non lorem arcu. Aliquam neque
-        mi, dictum at orci ut, feugiat vulputate urna. Vivamus a volutpat orci,
-        sit amet cursus dolor. Quisque tincidunt varius mauris non convallis.
-        Cras sed eros pharetra, blandit sapien id, convallis felis. Morbi
-        semper, quam vel condimentum semper, augue tellus accumsan sapien, vel
-        semper libero libero at mi. Nam at leo nec nunc lacinia luctus. Morbi in
-        odio vel tortor vestibulum vulputate eget vitae ex.
-      </p>
+    <div class="col-12 row cards">
+
+      <div class="card col-10">
+        <div class="header">
+          <h1>teste</h1>
+          <div class="links">
+            <div class="github">
+              <a rel="noreferrer noopener" target="_blank">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+            <div>
+              <a rel="noreferrer noopener" target="_blank">
+                <i class="fa-brands fa-github"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="description">
+          <p>sjdfnsojd</p>
+        </div>
+        <div class="tecnologies">
+          <ul>
+            <li>sdjf</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="meio">
+        <div class="card mt-3 col-10">
+          <div class="header">
+            <h1>teste</h1>
+            <div class="links">
+              <div class="github">
+                <a rel="noreferrer noopener" target="_blank">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+              </div>
+              <div>
+                <a rel="noreferrer noopener" target="_blank">
+                  <i class="fa-brands fa-github"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="description">
+            <p>sjdfnsojd</p>
+          </div>
+          <div class="tecnologies">
+            <ul>
+              <li>sdjf</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="card mt-3 col-10">
+        <div class="header">
+          <h1>teste</h1>
+          <div class="links">
+            <div class="github">
+              <a rel="noreferrer noopener" target="_blank">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+            <div>
+              <a rel="noreferrer noopener" target="_blank">
+                <i class="fa-brands fa-github"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="description">
+          <p>sjdfnsojd</p>
+        </div>
+        <div class="tecnologies">
+          <ul>
+            <li>sdjf</li>
+          </ul>
+        </div>
+      </div>
     </div>
   </div>
 </div>

@@ -1,9 +1,100 @@
-.scrollspy-example{
-  max-height: 60vh;
-  overflow-y: scroll;
+@import "../../../../assets/variables.scss";
+
+
+.timeline{
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 2px;
+  .divider{
+    background-color: $primary-color;
+    width: 1px;
+    height: 15vh;
+  }
+  
+  span{
+    color: $secondary-color;
+  }
 }
 
 
-.list-group-item.active {
-  background-color: #f8f9fa;
+.card{
+  margin-left: 3rem;
+}
+
+.meio{
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.card {
+  box-shadow: 0 10px 30px -15px #100036cd;
+  display: flex;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  flex-direction: column;
+  align-items: flex-start;
+  height: 25vh;
+  padding: 2rem 1.75rem;
+  border-radius: 16px;
+  background-color: #180050;
+  transition: transform 0.5s;
+
+  h1 {
+    color: $primary-color-title;
+  }
+
+  a {
+    color: $primary-color-title;
+    cursor: pointer;
+    font-size: 17pt;
+  }
+
+  a:hover {
+    color: $secondary-color;
+  }
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+h1 {
+  font-size: 15pt;
+}
+
+p {
+  color: $primary-color !important;
+  margin-top: 0.5rem;
+  margin-bottom: 0 !important;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+
+  .github {
+    margin-right: 0.5rem !important;
+    font-size: 15pt;
+  }
+}
+
+ul {
+  color: $primary-color !important;
+
+  display: flex;
+  align-items: flex-end;
+  flex-grow: 1;
+  flex-wrap: wrap;
+  padding: 0px;
+  margin: 20px 0px 0px;
+  list-style: none;
+
+  li {
+    margin-right: 15px;
+  }
 }

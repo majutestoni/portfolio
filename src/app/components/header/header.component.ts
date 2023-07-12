@@ -7,6 +7,7 @@ import { Component, EventEmitter, HostListener, Output } from '@angular/core';
 })
 export class HeaderComponent {
   public open = false;
+  public color = false
   innerWidth = 0;
 
   @Output() menuIsOpen = new EventEmitter();
@@ -19,6 +20,13 @@ export class HeaderComponent {
       this.open = false;
       this.menuIsOpen.emit(this.open);
     }
+  }
+
+  @HostListener('window:scroll', ['$event'])
+  onWindowScroll(event: Event) {
+    window.scrollY > 250
+    ? this.color = true
+    : this.color = false
   }
 
   openMenu() {

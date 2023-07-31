@@ -7,6 +7,8 @@ import * as Aos from 'aos';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent implements OnInit {
+  public element = '';
+
   ngOnInit(): void {
     Aos.init();
   }
@@ -16,5 +18,15 @@ export class AppComponent implements OnInit {
 
   menuIsOpen(event: any) {
     this.open = event;
+  }
+
+  public gotToSection($element: any, section: string): void {
+    this.element = section;
+
+    $element.scrollIntoView({
+      behavior: 'smooth',
+      block: 'start',
+      inline: 'nearest',
+    });
   }
 }

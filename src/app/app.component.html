@@ -2,19 +2,19 @@
 <div class="conteudo">
   <div class=" {{ open ? 'fundo open' : '' }}"></div>
   <section>
-    <app-welcome></app-welcome>
+    <app-welcome (clickMore)="gotToSection(about, 'about')"></app-welcome>
   </section>
-  <section>
-    <app-about></app-about>
+  <section #about>
+    <app-about class="anchor"></app-about>
   </section>
-  <section>
-    <app-work></app-work>
+  <section #work>
+    <app-work class="anchor"></app-work>
   </section>
-  <section>
-    <app-projects></app-projects>
+  <section #projects>
+    <app-projects class="anchor"></app-projects>
   </section>
-  <section>
-    <app-contact></app-contact>
+  <section #contact>
+    <app-contact class="anchor"></app-contact>
   </section>
 </div>
 <div class="side-left"><app-side-left></app-side-left></div>

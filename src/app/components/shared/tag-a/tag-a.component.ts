@@ -9,5 +9,6 @@ export class TagAComponent {
 
   @Input() public link = ''
   @Input() public text = ''
+  @Input() public icon = ''
 
 }

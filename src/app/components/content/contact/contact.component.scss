@@ -1,20 +1,110 @@
-@import '../../../../assets/variables.scss';
+@import "../../../../assets/variables.scss";
+@import url("https://fonts.googleapis.com/css2?family=Martian+Mono:wght@400;600&family=Roboto&display=swap");
 
-.contact{
+.contact {
   width: 100%;
   padding: 5%;
   color: $primary-color;
 }
 
-
-.data{
-  padding: 5%;
+.data {
   display: flex;
-    flex-direction: column;
-    align-items: center;
+  align-items: center;
+  p {
+    font-size: 1rem;
+    width: 70%;
+  }
 
-    p{
-      font-size: 1.3rem;
-    text-align: center;
-    }
+  h1 {
+    font-family: "Martian Mono", monospace;
+    font-weight: 800;
+    font-size: 2rem;
+  }
+}
+
+$bg-color: #424242;
+$muted-color: mix(white, $bg-color, 70%);
+$trans-time: 300ms;
+$width: 320px;
+
+// FORM // ============================== //
+form {
+  width: $width;
+  margin: 45px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  hr.sep {
+    background: $secondary-color;
+    box-shadow: none;
+    border: none;
+    height: 2px;
+    width: 25%;
+    margin: 0px auto 45px auto;
+  }
+  .emoji {
+    font-size: 1.2em;
+  }
+}
+
+.group {
+  position: relative;
+  margin: 45px 0;
+}
+
+textarea {
+  resize: none;
+}
+
+input,
+textarea {
+  background: none;
+  color: $muted-color;
+  font-size: 18px;
+  padding: 10px 10px 10px 5px;
+  display: block;
+  width: $width;
+  border: none;
+  border-radius: 0;
+  border-bottom: 1px solid $muted-color;
+  &:focus {
+    outline: none;
+  }
+  &:focus ~ label,
+  &:valid ~ label {
+    top: -14px;
+    font-size: 12px;
+    color: $secondary-color;
+  }
+  &:focus ~ .bar:before {
+    width: $width;
+  }
+}
+
+label {
+  color: $muted-color;
+  font-size: 16px;
+  font-weight: normal;
+  position: absolute;
+  pointer-events: none;
+  left: 5px;
+  top: 10px;
+  transition: $trans-time ease all;
+}
+
+.bar {
+  position: relative;
+  display: block;
+  width: $width;
+  &:before {
+    content: "";
+    height: 2px;
+    width: 0;
+    bottom: 0px;
+    position: absolute;
+    background: $secondary-color;
+    transition: $trans-time ease all;
+    left: 0%;
+  }
 }

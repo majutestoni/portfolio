@@ -1,23 +1,35 @@
 <app-header (menuIsOpen)="menuIsOpen($event)"></app-header>
 <div class="conteudo">
   <div class=" {{ open ? 'fundo open' : '' }}"></div>
-  <section>
+  <section #welcome >
     <app-welcome (clickMore)="gotToSection(about, 'about')"></app-welcome>
   </section>
   <section #about>
     <app-about class="anchor"></app-about>
   </section>
   <section #work>
-    <app-work class="anchor"></app-work>
+    <app-work class="anchor2"></app-work>
   </section>
   <section #projects>
-    <app-projects class="anchor"></app-projects>
+    <app-projects class="anchor2"></app-projects>
   </section>
   <section #contact>
-    <app-contact class="anchor"></app-contact>
+    <app-contact class="anchor2"></app-contact>
   </section>
 </div>
 <div class="side-left"><app-side-left></app-side-left></div>
+<div>
+  <nav>
+    <ul>
+      <li (click)="gotToSection(welcome, 'welcome')">Inicio</li>
+      <li (click)="gotToSection(about, 'about')">Sobre</li>
+      <li (click)="gotToSection(work, 'work')">Experiencia</li>
+      <li (click)="gotToSection(projects, 'projects')">Projetos</li>
+      <li (click)="gotToSection(contact, 'contact')">Contato</li>
+    </ul>
+  </nav>
+</div>
+
 <footer>
   <app-footer></app-footer>
 </footer>

@@ -5,7 +5,10 @@ a {
   display: inline-block;
   text-decoration: none;
   color: $secondary-color;
+}
 
+i{
+  color: $primary-color;
 }
 
 a::after {

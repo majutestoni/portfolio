@@ -1,13 +1,43 @@
 <div class="contact">
   <app-title [title]="'E agora?'" [topic]="'0100'"></app-title>
   <div class="data">
-    <p>
-      Primeiramente, obrigada pela sua visita e caso queira dar um
-      feedback/sugestão ou somente entrar em contato comigo (a propósito, eu
-      adoro tomar café), existem algumas formas:
-    </p>
-
-    <app-button  (click)="openEmail()" [text]="'Email'"></app-button>
+    <div>
+      <h1>Obrigada pela sua visita</h1>
+      <p>
+        e caso queira dar um feedback/sugestão ou somente entrar em contato
+        comigo (a propósito, eu adoro tomar café), existem algumas formas:
+      </p>
+      <app-tag-a
+        [icon]="'fa-regular fa-envelope'"
+        (click)="openEmail()"
+        [text]="'majuliatestoni@gmail.com'"
+      ></app-tag-a>
+    </div>
+    <div class="wrapper">
+      <form [formGroup]="formGroup">
+        <div class="group">
+          <input type="text" formControlName="name" />
+          <span class="highlight"></span>
+          <span class="bar"></span>
+          <label>Name</label>
+        </div>
+        <div class="group">
+          <input type="text" formControlName="email" />
+          <span class="highlight"></span>
+          <span class="bar"></span>
+          <label>Email</label>
+        </div>
+        <div class="group">
+          <textarea rows="2" formControlName="message"></textarea>
+          <span class="highlight"></span>
+          <span class="bar"></span>
+          <label>Message</label>
+        </div>
+        <app-button (click)="enviar()" [text]="'Enviar'"></app-button>
+      </form>
+    </div>
+    <!--
+    <app-button (click)="openEmail()" [text]="'Email'"></app-button>
 
     <p class="mt-5">E tambem estou sempre por outras redes:</p>
     <div class="row">
@@ -25,6 +55,6 @@
           href="https://br.linkedin.com/in/majutestoni?trk=profile-badge"
         ></a>
       </div>
-    </div>
+    </div>-->
   </div>
 </div>

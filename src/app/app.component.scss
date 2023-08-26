@@ -32,7 +32,7 @@ footer {
 
 .conteudo {
   margin-left: 20%;
-  margin-right: 15%;
+  margin-right: 20%;
 }
 
 nav {
@@ -60,8 +60,13 @@ nav {
   }
 
   li:hover {
-    transform: translateY(-1vh);
     color: $secondary-color;
+  }
+}
+
+@media screen and (max-width: 1050px){
+  .nav_wrapper{
+    display: none;
   }
 }
 

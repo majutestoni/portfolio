@@ -1,8 +1,22 @@
 <body>
   <app-title [title]="'Projetos'" [topic]="'0100'"></app-title>
-  <div >
+  <div>
+    <form [formGroup]="formGroup">
+      <div class="group">
+        <input type="text" formControlName="pesquisa" />
+        <span class="highlight"></span>
+        <span class="bar"></span>
+        <label>Pesquisar por título</label>
+      </div>
+    </form>
     <div class="row">
-        <div data-aos="fade-up" data-aos-duration="2000" *ngFor="let project of projects" class=" col-md-6 col-sm-12 projeto">
+      <div *ngIf="!($filtro | async)"  class="row">
+        <div
+          data-aos="fade-up"
+          data-aos-duration="2000"
+          *ngFor="let project of projects"
+          class="col-md-6 col-sm-12 projeto"
+        >
           <app-project
             [title]="project.title"
             [linkGithub]="project.linkGithub"
@@ -11,6 +25,19 @@
             [tecnologies]="project.tecnologies"
           ></app-project>
         </div>
+      </div>
+      <div
+        *ngFor="let project of $filtro | async"
+        class="col-md-6 col-sm-12 projeto"
+      >
+        <app-project
+          [title]="project.title"
+          [linkGithub]="project.linkGithub"
+          [linkProject]="project.linkProject"
+          [description]="project.description"
+          [tecnologies]="project.tecnologies"
+        ></app-project>
+      </div>
     </div>
   </div>
 </body>

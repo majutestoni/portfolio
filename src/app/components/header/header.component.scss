@@ -1,7 +1,6 @@
 @import "../../../assets/variables.scss";
 @import url("https://fonts.googleapis.com/css2?family=Martian+Mono:wght@400;600&family=Roboto&display=swap");
 
-
 .wrapper {
   position: relative;
 }
@@ -49,8 +48,9 @@ header {
   justify-content: space-between;
   align-items: center;
   position: fixed;
+  bottom: 0;
   top: 0;
-  z-index: 10;
+  z-index: 8;
 
   height: 0;
   overflow: hidden;
@@ -91,16 +91,17 @@ header {
 }
 
 .wrapper-menu {
-  position: absolute;
+  position: fixed;
   top: 20px;
   width: 40px;
   height: 40px;
+  left: 85%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   cursor: pointer;
   transition: transform 330ms ease-out;
-  z-index: 10;
+  z-index: 20;
 }
 
 .wrapper-menu.open {
@@ -138,10 +139,11 @@ header {
 }
 
 .menu {
-  position: absolute;
+  position: fixed;
   right: 0;
   top: 0;
   width: 0;
+  z-index: 10;
   background-color: #1d1e27;
   overflow: hidden;
   height: 100vh;

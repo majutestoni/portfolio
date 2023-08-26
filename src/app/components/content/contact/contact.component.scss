@@ -108,3 +108,24 @@ label {
     left: 0%;
   }
 }
+
+@media screen and (max-width: 1200px){
+  .data{
+    display: flex;
+    flex-direction: column;
+    margin-top: 7vh;
+  }
+
+  .texto{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+
+    p{
+      width: 100%;
+      text-align: center;
+    }
+  }
+
+}

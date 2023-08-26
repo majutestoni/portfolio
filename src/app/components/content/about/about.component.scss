@@ -7,12 +7,12 @@ body {
 .style-about {
   max-width: 900px;
   color: $primary-color;
+  min-height: 100vh;
 
   .inner {
     display: grid;
     grid-template-columns: 3fr 2fr;
     grid-gap: 50px;
-    height: 100vh;
 
     @media (max-width: 768px) {
       display: block;
@@ -57,7 +57,7 @@ a {
   position: relative;
   max-width: 300px;
 
-  @media (max-width: 768px) {
+  @media (max-width: 1100px) {
     margin: 50px auto 0;
     width: 70%;
   }
@@ -150,8 +150,13 @@ ul {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1100px) {
   .about .inner {
     display: block;
+    height: 100%;
+  }
+
+  .style-pic{
+    height: 70vh;
   }
 }

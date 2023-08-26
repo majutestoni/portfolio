@@ -1,11 +1,18 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { FormBuilder, FormGroup } from '@angular/forms';
+import { Observable, debounceTime, distinctUntilChanged, map } from 'rxjs';
 
 @Component({
   selector: 'app-projects',
   templateUrl: './projects.component.html',
   styleUrls: ['./projects.component.scss'],
 })
-export class ProjectsComponent {
+export class ProjectsComponent implements OnInit {
+  public formGroup: FormGroup;
+
+  public filtrado = false
+  public $filtro: Observable<Projects[]> | undefined;
+
   public projects: Projects[] = [
     {
       title: 'T-med',
@@ -57,6 +64,29 @@ export class ProjectsComponent {
       tecnologies: ['Nextjs', 'Node', 'Fastify'],
     },
   ];
+
+  constructor(private formBuilder: FormBuilder) {}
+  ngOnInit(): void {
+
+    console.log(this.$filtro)
+    this.formGroup = this.formBuilder.group({
+      pesquisa: [''],
+    });
+
+    this.$filtro = this.formGroup.get('pesquisa')?.valueChanges.pipe(
+      debounceTime(200),
+      map((value) => value.trim()),
+      distinctUntilChanged(),
+      map((res) => this.searchValues(res))
+    );
+  }
+
+  searchValues(res: string) {
+    return this.projects.filter(
+      (project) =>
+        project.title.toLowerCase().includes(res.toLocaleLowerCase()) == true
+    );
+  }
 }
 export interface Projects {
   title: string;

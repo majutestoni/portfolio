@@ -1,6 +1,6 @@
 <div class="wrapper">
   <h5 class="efeito">MJ</h5>
-  <app-toggle-time></app-toggle-time>
+  <app-toggle-time (changeTheme)="darkTheme($event)"></app-toggle-time>
   <div class="big-screen">
     <app-button [text]="'Curriculo'"></app-button>
   </div>

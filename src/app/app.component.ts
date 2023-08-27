@@ -29,4 +29,8 @@ export class AppComponent implements OnInit {
       inline: 'nearest',
     });
   }
+
+  changeTheme($event: any) {
+    document.body.classList.toggle('dark-theme');
+  }
 }

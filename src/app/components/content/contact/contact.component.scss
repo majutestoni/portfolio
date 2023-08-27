@@ -4,7 +4,7 @@
 .contact {
   width: 100%;
   padding: 5%;
-  color: $primary-color;
+  color: var(--primary-color);
 }
 
 .data {
@@ -36,7 +36,7 @@ form {
   align-items: center;
 
   hr.sep {
-    background: $secondary-color;
+    background: var(--secondary-color);
     box-shadow: none;
     border: none;
     height: 2px;
@@ -75,7 +75,7 @@ textarea {
   &:valid ~ label {
     top: -14px;
     font-size: 12px;
-    color: $secondary-color;
+    color: var(--secondary-color);
   }
   &:focus ~ .bar:before {
     width: $width;
@@ -103,7 +103,7 @@ label {
     width: 0;
     bottom: 0px;
     position: absolute;
-    background: $secondary-color;
+    background: var(--secondary-color);
     transition: $trans-time ease all;
     left: 0%;
   }

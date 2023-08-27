@@ -22,7 +22,7 @@ h5.efeito {
 
 
 .color {
-  background-color: rgb(35 10 92 / 36%);
+  background-color: var(--header-background);
   box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.9);
   backdrop-filter: blur(10px);
   height: 10vh;
@@ -169,7 +169,7 @@ header {
 
   a {
     font-family: "Martian Mono", monospace;
-    color: $primary-color;
+    color: var(--primary-color);
     outline: none;
     text-decoration: none;
   }

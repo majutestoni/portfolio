@@ -1,4 +1,4 @@
-<app-header (menuIsOpen)="menuIsOpen($event)"></app-header>
+<app-header (menuIsOpen)="menuIsOpen($event)" (changeTheme)="changeTheme($event)"></app-header>
 <div class="conteudo">
   <div class=" {{ open ? 'fundo open' : '' }}"></div>
   <section #welcome >
@@ -21,11 +21,11 @@
 <div>
   <nav class="nav_wrapper">
     <ul>
-      <li (click)="gotToSection(welcome, 'welcome')">Inicio</li>
-      <li (click)="gotToSection(about, 'about')">Sobre</li>
-      <li (click)="gotToSection(work, 'work')">Experiencia</li>
-      <li (click)="gotToSection(projects, 'projects')">Projetos</li>
-      <li (click)="gotToSection(contact, 'contact')">Contato</li>
+      <li id="list" (click)="gotToSection(welcome, 'welcome')">Inicio</li>
+      <li id="list" (click)="gotToSection(about, 'about')">Sobre</li>
+      <li id="list" (click)="gotToSection(work, 'work')">Experiencia</li>
+      <li id="list" (click)="gotToSection(projects, 'projects')">Projetos</li>
+      <li id="list" (click)="gotToSection(contact, 'contact')">Contato</li>
     </ul>
   </nav>
 </div>

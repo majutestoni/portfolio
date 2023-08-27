@@ -54,13 +54,13 @@ nav {
 
   li {
     font-size: 0.75rem;
-    color: $primary-color-title;
+    color: var(--primary-color-title);
     margin-top: 0.75rem;
     transition: 0.2s;
   }
 
   li:hover {
-    color: $secondary-color;
+    color: var(--secondary-color);
   }
 }
 

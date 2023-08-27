@@ -1,6 +1,3 @@
-
-
-
 //$dark-theme;
 $backgroud-primary: #131720;
 $backgroud-secondary: #29125f81;
@@ -8,3 +5,23 @@ $primary-color: #a3a8ae;
 $primary-color-title: #ccd6f6;
 $secondary-color: #996dff;
 
+:root {
+  --backgroud-primary: #f0f2f5;
+  --backgroud-secondary: #ffffff;
+  --primary-color: #333333;
+  --primary-color-title: #000000;
+  --secondary-color: #ff8c00;
+  --header-background: rgba(92, 80, 10, 0.36);
+  --card-background:#d17300;
+
+}
+
+:root .dark-theme {
+  --backgroud-primary: #131720;
+  --backgroud-secondary: #29125f81;
+  --primary-color: #a3a8ae;
+  --primary-color-title: #ccd6f6;
+  --secondary-color: #996dff;
+  --header-background: rgb(35 10 92 / 36%);
+  --card-background:#180050;
+}

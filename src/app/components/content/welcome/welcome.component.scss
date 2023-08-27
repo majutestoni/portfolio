@@ -10,12 +10,12 @@ $arrow-line-width: 4px;
   display: flex;
   justify-content: center;
   flex-direction: column;
-  color: $primary-color;
+  color: var(--primary-color);
   max-width: 670px;
   h1 {
     font-family: 'Comme', sans-serif;
     font-weight: 900;
-    color: $primary-color-title;
+    color: var(--primary-color-title);
   }
 
 

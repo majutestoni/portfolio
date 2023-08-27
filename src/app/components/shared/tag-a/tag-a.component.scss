@@ -4,11 +4,11 @@ a {
   position: relative;
   display: inline-block;
   text-decoration: none;
-  color: $secondary-color;
+  color: var(--secondary-color);
 }
 
 i{
-  color: $primary-color;
+  color: var(--primary-color);
 }
 
 a::after {
@@ -18,7 +18,7 @@ a::after {
   bottom: -2px; /* Ajuste a altura da sublinha conforme necessário */
   width: 0;
   height: 0.1rem; /* Ajuste a espessura da sublinha conforme necessário */
-  background-color:  $secondary-color; /* Cor da sublinha */
+  background-color:  var(--secondary-color); /* Cor da sublinha */
   transition: width 0.3s ease; /* Duração e transição da animação */
 }
 

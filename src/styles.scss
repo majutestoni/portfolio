@@ -13,7 +13,7 @@
 body {
   width: 100%;
   height: 100vh;
-  background: url("assets/img/bg-star.svg") no-repeat fixed bottom center;
+  background: var(--img-back) no-repeat fixed bottom center;
   background-color: var(--backgroud-primary) !important;
   background-size: cover;
 }
@@ -27,7 +27,7 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: var(--backgroud-secondary);
+  background-color: var(--secondary-color);
   border-radius: 20px;
 }
 

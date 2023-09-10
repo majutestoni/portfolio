@@ -67,7 +67,7 @@ a {
     position: relative;
     width: 100%;
     border-radius: 16px;
-    background-color: var(--secondary-color);
+    background-color: var(--img-color);
     transition: 0.2s;
 
     &:hover,
@@ -108,13 +108,13 @@ a {
     &:before {
       top: 0;
       left: 0;
-      background-color: var(--secondary-color);
+      background-color: var(--img-color);
       mix-blend-mode: screen;
       z-index: 3;
     }
 
     &:after {
-      border: 2px solid var(--secondary-color);
+      border: 2px solid var(--img-color);
       top: 14px;
       left: 14px;
       z-index: 0;
@@ -156,7 +156,7 @@ ul {
     height: 100%;
   }
 
-  .style-pic{
+  .style-pic {
     height: 70vh;
   }
 }

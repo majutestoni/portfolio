@@ -5,6 +5,8 @@ import { TitleModule } from '../../shared/title/title.module';
 import { ButtonModule } from '../../shared/button/button.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { TagAModule } from '../../shared/tag-a/tag-a.module';
+import { ContactService } from './contact.service';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 
 
 
@@ -18,8 +20,10 @@ import { TagAModule } from '../../shared/tag-a/tag-a.module';
     ButtonModule,
     FormsModule,
     ReactiveFormsModule,
-    TagAModule
+    TagAModule,
+    HttpClientModule
   ],
-  exports: [ContactComponent]
+  exports: [ContactComponent],
+  providers: [ContactService]
 })
 export class ContactModule { }

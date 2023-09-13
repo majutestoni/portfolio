@@ -68,7 +68,6 @@ export class ProjectsComponent implements OnInit {
   constructor(private formBuilder: FormBuilder) {}
   ngOnInit(): void {
 
-    console.log(this.$filtro)
     this.formGroup = this.formBuilder.group({
       pesquisa: [''],
     });

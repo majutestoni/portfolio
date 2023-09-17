@@ -1,33 +1,31 @@
 <div class="wrapper">
-  <h5 class="efeito">MJ</h5>
-  <app-toggle-time (changeTheme)="darkTheme($event)"></app-toggle-time>
-  <div class="big-screen">
-    <app-button [text]="'Curriculo'"></app-button>
-  </div>
-  <div class="burguer">
-    <div class="wrapper-menu {{ open ? 'open' : '' }}" (click)="openMenu()">
-      <div class="line-menu half start"></div>
-      <div class="line-menu"></div>
-      <div class="line-menu half end"></div>
+    <h5 class="efeito">MJ</h5>
+    <div class="bnt-mudarTema">
+        <app-toggle-time (changeTheme)="darkTheme($event)"></app-toggle-time>
     </div>
-  </div>
-  <div class="right">
-    <div class="menu {{ open ? 'abrir' : '' }}">
-      <ul>
-        <li><a href="">Sobre</a></li>
-        <li><a href="">Profissão</a></li>
-        <li><a href="">Projetos</a></li>
-        <li><a href="">Contato</a></li>
-        <li>
-          <app-button [text]="'Curriculo'"></app-button>
-        </li>
-      </ul>
+    <div class="big-screen">
+        <app-button [text]="'Curriculo'"></app-button>
     </div>
-  </div>
-  <header
-    class="{{ color ? 'color' : '' }} animated-background"
-    [ngClass]="{ visible: color }"
-  >
-
-  </header>
+    <div class="burguer">
+        <div class="wrapper-menu {{ open ? 'open' : '' }}" (click)="openMenu()">
+            <div class="line-menu half start"></div>
+            <div class="line-menu"></div>
+            <div class="line-menu half end"></div>
+        </div>
+    </div>
+    <div class="right">
+        <div class="menu {{ open ? 'abrir' : '' }}">
+            <ul>
+                <li class="toggle-time"><app-toggle-time (changeTheme)="darkTheme($event)"></app-toggle-time></li>
+                <li><a href="">Sobre</a></li>
+                <li><a href="">Profissão</a></li>
+                <li><a href="">Projetos</a></li>
+                <li><a href="">Contato</a></li>
+                <li>
+                    <app-button [text]="'Curriculo'"></app-button>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <header class="{{ color ? 'color' : '' }} animated-background" [ngClass]="{ visible: color }"></header>
 </div>

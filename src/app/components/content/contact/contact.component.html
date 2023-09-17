@@ -9,7 +9,7 @@
                     <small>Agora</small>
                     <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
                 </div>
-                <div class="toast-body">As resposta fora enviadas :) Logo mais retorno!</div>
+                <div class="toast-body">Suas respostas foram enviadas! Logo mais retorno :)</div>
             </div>
             <div id="liveToastError" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
                 <div class="toast-header">
@@ -33,7 +33,10 @@
             <app-tag-a [icon]="'fa-regular fa-envelope'" (click)="openEmail()" [text]="'majuliatestoni@gmail.com'"></app-tag-a>
         </div>
         <div class="wrapper">
-            <form [formGroup]="formGroup">
+
+
+
+            <form [formGroup]="formGroup" action="https://formsubmit.co/majuliatestoni@gmail.com" method="POST">
                 <div class="group">
                     <input type="text" formControlName="name" />
                     <span class="highlight"></span>
@@ -53,7 +56,7 @@
                     <label>Message</label>
                 </div>
                 <app-button (click)="enviar()" [text]="'Enviar'"></app-button>
-            </form>
+            </form> 
         </div>
         <!--
     <app-button (click)="openEmail()" [text]="'Email'"></app-button>

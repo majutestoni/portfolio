@@ -1,3 +1,5 @@
+@import '../../../../assets/variables.scss';
+
 .button-82-pushable {
   position: relative;
   border: none;
@@ -31,13 +33,7 @@
   width: 100%;
   height: 100%;
   border-radius: 12px;
-  background: linear-gradient(
-    to left,
-    hsl(267, 100%, 16%) 0%,
-    hsl(279, 100%, 32%) 8%,
-    hsl(283, 100%, 32%) 92%,
-    hsl(267, 100%, 16%) 0%
-  );
+  background: var(--button-edge)
 }
 
 .button-82-front {
@@ -47,7 +43,7 @@
   border-radius: 12px;
   font-size: 1.1rem;
   color: white;
-  background: hsl(267, 100%, 47%);
+  background: var(--button);
   will-change: transform;
   transform: translateY(-4px);
   transition: transform 600ms cubic-bezier(0.3, 0.7, 0.4, 1);

@@ -22,6 +22,7 @@
     color: var(--primary-color-title);
     cursor: pointer;
     font-size: 17pt;
+    transition: 0.2s;
   }
 
   a:hover {
@@ -71,6 +72,11 @@ ul {
   list-style: none;
 
   li {
-    margin-right: 15px;
+    margin-right: 0.5em;
+    background-color: var(--tag-back);
+    padding: 6px;
+    border: 1px solid var(--tag-border);
+    border-radius: 12px;
+    font-size: 10pt;
   }
 }

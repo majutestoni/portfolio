@@ -24,6 +24,9 @@ $secondary-color: #996dff;
         hsl(202.54deg 100% 60.81%) 92%,
         hsl(249.75deg 100% 16%) 0%
     );
+
+    --tag-back: rgba(255, 150, 22, 0.529);
+    --tag-border:rgb(177, 97, 0);
 }
 
 :root .dark-theme {
@@ -45,4 +48,7 @@ $secondary-color: #996dff;
         hsl(283, 100%, 32%) 92%,
         hsl(267, 100%, 16%) 0%
     );
+
+    --tag-back: rgba(71, 18, 193, 0.36);
+    --tag-border:#996dff;
 }

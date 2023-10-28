@@ -53,10 +53,11 @@ nav {
   }
 
   li {
-    font-size: 0.75rem;
+    font-size: 0.95rem;
     color: var(--primary-color-title);
     margin-top: 0.75rem;
     transition: 0.2s;
+    cursor: pointer;
   }
 
   li:hover {

@@ -3,7 +3,7 @@
 //  top: 5vh;
 //  left: 50%;
   overflow: hidden;
-  z-index: 9;
+  z-index: 20;
   padding: 0 200px;
   transform: translate3d(-50%, -50%, 0);
 
@@ -44,7 +44,7 @@
 .toggle__handler {
   display: inline-block;
   position: relative;
-  z-index: 1;
+  z-index: 10;
   top: 3px;
   left: 3px;
   width: 50px - 6;

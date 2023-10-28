@@ -8,6 +8,18 @@ import { Component } from '@angular/core';
 export class WorkComponent {
 
   constructor(){}
+  isFlipped1: boolean = false;
+  isFlipped2: boolean = false;
+  isFlipped3: boolean = false;
 
+  toggleFlip1() {
+    this.isFlipped1 = !this.isFlipped1;
+  }
+  toggleFlip2() {
+    this.isFlipped2 = !this.isFlipped2;
+  }
+  toggleFlip3() {
+    this.isFlipped3 = !this.isFlipped3;
+  }
 
 }

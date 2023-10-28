@@ -188,11 +188,10 @@ header {
 }
 
 .toggle-time{
-  display: none;
   position: absolute;
   left: 50%;
   top: 20vh;
-  
+
 }
 
 .bnt-mudarTema {
@@ -211,9 +210,9 @@ header {
         display: none;
     }
 
-    .toggle-time{
-      display: block;
-    }
+    //.toggle-time{
+     // display: block;
+   // }
 
     .burguer {
         display: block;

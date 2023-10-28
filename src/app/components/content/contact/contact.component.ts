@@ -32,6 +32,8 @@ export class ContactComponent implements OnInit {
                         const toast = new bootstrap.Toast(myToast);
                         toast.show();
                     }
+
+                    this.formGroup.reset()
                 },
                 (err) => {
                     const myToast: HTMLElement | null = document.getElementById('liveToastError');
@@ -39,6 +41,8 @@ export class ContactComponent implements OnInit {
                         const toast = new bootstrap.Toast(myToast);
                         toast.show();
                     }
+
+                    this.formGroup.reset()
                 }
             );
         } else {

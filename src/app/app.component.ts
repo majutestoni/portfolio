@@ -20,6 +20,12 @@ export class AppComponent implements OnInit {
     this.open = event;
   }
 
+  processSection($event: string){
+    const teste: HTMLElement | null = document.getElementById($event)
+    this.gotToSection(teste, $event)
+
+  }
+
   public gotToSection($element: any, section: string): void {
     this.element = section;
 

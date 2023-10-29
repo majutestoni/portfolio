@@ -24,6 +24,9 @@ export class ContactComponent implements OnInit {
     }
 
     public enviar() {
+
+      
+
         if (this.formGroup.valid) {
             this.service.sendEmail(this.formGroup.value).subscribe(
                 (e) => {

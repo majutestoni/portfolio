@@ -60,7 +60,7 @@ textarea {
 input,
 textarea {
   background: none;
-  color: $muted-color;
+  color: var(--primary-color);
   font-size: 18px;
   padding: 10px 10px 10px 5px;
   display: block;
@@ -83,7 +83,7 @@ textarea {
 }
 
 label {
-  color: $muted-color;
+  color: var(--primary-color);
   font-size: 16px;
   font-weight: normal;
   position: absolute;

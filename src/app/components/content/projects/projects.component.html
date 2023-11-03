@@ -1,30 +1,29 @@
 <body>
     <app-title [title]="'Projetos'" [topic]="'0100'"></app-title>
     <div>
-      <div class="d-flex flex-column align-items-center">
-        <form [formGroup]="formGroup">
-            <div class="group">
-                <input type="text" formControlName="pesquisa" />
-                <span class="highlight"></span>
-                <span class="bar"></span>
-                <label>Pesquisar por título</label>
-            </div>
+        <div class="d-flex flex-column align-items-center">
+            <form [formGroup]="formGroup">
+                <div class="group">
+                    <input type="text" formControlName="pesquisa" />
+                    <span class="highlight"></span>
+                    <span class="bar"></span>
+                    <label>Pesquisar por título</label>
+                </div>
 
-            <div class="group">
-                <select (change)="searchEnum()" formControlName="stack" class="styled-select">
-                    <option value="" disabled selected>Selecione uma opção</option>
-                    <option value="Front">Front</option>
-                    <option value="Back">Back</option>
-                    <option value="Full">Full</option>
-                    <option value="Outros">Outros</option>
-                </select>
-                <span class="highlight"></span>
-                <span class="bar"></span>
-                <label>Pesquisar por area</label>
-            </div>
-
-          </form>
-          <app-button [text]="'limpar'" (click)="clean()"></app-button>
+                <div class="group">
+                    <select (change)="searchEnum()" formControlName="stack" class="styled-select">
+                        <option value="" disabled selected>Selecione uma opção</option>
+                        <option value="Front">Front</option>
+                        <option value="Back">Back</option>
+                        <option value="Full">Full</option>
+                        <option value="Outros">Outros</option>
+                    </select>
+                    <span class="highlight"></span>
+                    <span class="bar"></span>
+                    <label>Pesquisar por area</label>
+                </div>
+            </form>
+            <app-button [text]="'limpar'" (click)="clean()"></app-button>
         </div>
         <div class="row">
             <div *ngIf="!($filtro | async)" class="row">
@@ -43,14 +42,16 @@
                     ></app-project>
                 </div>
             </div>
-            <div *ngFor="let project of $filtro | async" class="col-md-6 col-sm-12 projeto">
-                <app-project
-                    [title]="project.title"
-                    [linkGithub]="project.linkGithub"
-                    [linkProject]="project.linkProject"
-                    [description]="project.description"
-                    [tecnologies]="project.tecnologies"
-                ></app-project>
+            <div class="row">
+                <div *ngFor="let project of $filtro | async" class="col-md-6 col-sm-12 projeto">
+                    <app-project
+                        [title]="project.title"
+                        [linkGithub]="project.linkGithub"
+                        [linkProject]="project.linkProject"
+                        [description]="project.description"
+                        [tecnologies]="project.tecnologies"
+                    ></app-project>
+                </div>
             </div>
         </div>
     </div>

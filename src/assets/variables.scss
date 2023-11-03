@@ -27,6 +27,8 @@ $secondary-color: #996dff;
 
     --tag-back: rgba(255, 150, 22, 0.529);
     --tag-border:rgb(177, 97, 0);
+    --back-language:#ffffff96;
+    --select-language: #ffffff
 }
 
 :root .dark-theme {
@@ -51,4 +53,6 @@ $secondary-color: #996dff;
 
     --tag-back: rgba(71, 18, 193, 0.36);
     --tag-border:#996dff;
+    --back-language:#ffffff96;
+    --select-language: #ccd6f6
 }

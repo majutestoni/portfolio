@@ -3,6 +3,13 @@
     <div class="bnt-mudarTema">
         <app-toggle-time (changeTheme)="darkTheme($event)"></app-toggle-time>
     </div>
+    <div class="bnt-mudarLingua">
+        <div class="switch-button">
+            <input (change)="changeLanguage()" class="switch-button-checkbox" type="checkbox" />
+            <label class="switch-button-label" for=""><span class="switch-button-label-span">Potugues</span></label>
+        </div>
+    </div>
+
     <div class="big-screen">
         <app-button [text]="'Curriculo'"></app-button>
     </div>
@@ -16,12 +23,27 @@
     <div class="right">
         <div class="menu {{ open ? 'abrir' : '' }}">
             <ul>
+              <div class="switch-button">
+                <input (change)="changeLanguage()" class="switch-button-checkbox" type="checkbox" />
+                <label class="switch-button-label" for=""><span class="switch-button-label-span">Potugues</span></label>
+            </div>
                 <li class="toggle-time"><app-toggle-time (changeTheme)="darkTheme($event)"></app-toggle-time></li>
-                <li><a (click)="goToSection('welcome')">Inicio</a></li>
-                <li><a (click)="goToSection('about')">Sobre</a></li>
-                <li><a (click)="goToSection('work')">Profissão</a></li>
-                <li><a (click)="goToSection('projects')">Projetos</a></li>
-                <li><a (click)="goToSection('contact')">Contato</a></li>
+
+                <li>
+                    <a (click)="goToSection('welcome')">{{ 'portfolio_start' | translate }}</a>
+                </li>
+                <li>
+                    <a (click)="goToSection('about')">{{ 'portfolio_about' | translate }}</a>
+                </li>
+                <li>
+                    <a (click)="goToSection('work')">{{ 'portfolio_work' | translate }}</a>
+                </li>
+                <li>
+                    <a (click)="goToSection('projects')">{{ 'portfolio_projects' | translate }}</a>
+                </li>
+                <li>
+                    <a (click)="goToSection('contact')">{{ 'portfolio_contact' | translate }}</a>
+                </li>
                 <li>
                     <app-button [text]="'Curriculo'"></app-button>
                 </li>

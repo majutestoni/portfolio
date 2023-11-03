@@ -197,7 +197,7 @@ header {
 .bnt-mudarTema {
     position: fixed;
     top: 5vh;
-    left: 50%;
+    left: 40%;
     z-index: 9;
 }
 
@@ -209,6 +209,14 @@ header {
     .bnt-mudarTema {
         display: none;
     }
+    .bnt-mudarLingua{
+      display: none;
+    }
+
+    .switch-button{
+      top: 10vh;
+      position: absolute;
+    }
 
     //.toggle-time{
      // display: block;
@@ -217,4 +225,79 @@ header {
     .burguer {
         display: block;
     }
+}
+
+.bnt-mudarLingua{
+  position: fixed;
+  top: 2vh;
+  left: 60%;
+  z-index: 9;
+}
+.switch-button {
+
+  background: var(--back-language);
+  border-radius: 30px;
+  overflow: hidden;
+  width: 200px;
+  text-align: center;
+  font-size: 14px;
+  letter-spacing: 1px;
+  color: var(--button);
+  padding-right: 90px;
+
+  &:before {
+    content: "English";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 3;
+    pointer-events: none;
+  }
+
+  &-checkbox {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: 2;
+
+    &:checked + .switch-button-label:before {
+      transform: translateX(105px);
+      transition: transform 300ms linear;
+    }
+
+    & + .switch-button-label {
+      position: relative;
+      padding: 15px 0;
+      display: block;
+      user-select: none;
+      pointer-events: none;
+
+      &:before {
+        content: "";
+        background: var(--select-language);
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        border-radius: 30px;
+        transform: translateX(0);
+        transition: transform 300ms;
+      }
+
+      .switch-button-label-span {
+        position: relative;
+      }
+    }
+  }
 }

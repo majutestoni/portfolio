@@ -96,8 +96,7 @@ export class ProjectsComponent implements OnInit {
     }
 
     clean() {
-        this.formGroup.reset();
-        this.$filtro = of(this.projects);
+        this.ngOnInit()
     }
 }
 export interface Projects {

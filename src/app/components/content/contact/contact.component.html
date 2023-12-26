@@ -1,34 +1,33 @@
 <div class="contact">
-    <app-title [title]="'E agora?'" [topic]="'0100'"></app-title>
+    <app-title [title]="'portfolio_contact_title' | translate" [topic]="'0100'"></app-title>
     <div class="data">
         <div class="toast-container position-fixed bottom-0 end-0 p-3">
             <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
                 <div class="toast-header">
                     <img src="../../../../assets/img/favicon.png" width="20" class="rounded me-2" alt="..." />
-                    <strong class="me-auto">Formulário recebido!</strong>
-                    <small>Agora</small>
+                    <strong class="me-auto">{{'"portfolio_contact_email"' | translate}}</strong>
+                    <small>{{'"portfolio_contact_email_1"' | translate}}</small>
                     <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
                 </div>
-                <div class="toast-body">Suas respostas foram enviadas! Logo mais retorno :)</div>
+                <div class="toast-body">{{'"portfolio_contact_email_2"' | translate}}</div>
             </div>
             <div id="liveToastError" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
                 <div class="toast-header">
                     <img src="../../../../assets/img/favicon.png" width="20" class="rounded me-2" alt="..." />
-                    <strong class="me-auto">Erro ao receber formulário!</strong>
-                    <small>Agora</small>
+                    <strong class="me-auto">{{'"portfolio_contact_erro"' | translate}}</strong>
+                    <small>{{'"portfolio_contact_email_1"' | translate}}</small>
                     <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
                 </div>
                 <div class="toast-body">
-                    Erro ao receber formulario :( caso continue ocorrendo entre em contador por meio de majuliatestoni@gmail.com
+                  {{'"portfolio_contact_erro_1"' | translate}}
                 </div>
             </div>
         </div>
 
         <div class="texto">
-            <h1>Obrigada pela sua visita</h1>
+            <h1>{{'portfolio_contact_h1' | translate}}</h1>
             <p>
-                e caso queira dar um feedback/sugestão ou somente entrar em contato comigo (a propósito, eu adoro tomar café),
-                existem algumas formas:
+                {{'portfolio_contact_p' | translate}}
             </p>
             <app-tag-a [icon]="'fa-regular fa-envelope'" (click)="openEmail()" [text]="'majuliatestoni@gmail.com'"></app-tag-a>
         </div>
@@ -41,7 +40,7 @@
                     <input type="text" formControlName="name" />
                     <span class="highlight"></span>
                     <span class="bar"></span>
-                    <label>Name</label>
+                    <label>{{'portfolio_name' | translate}}</label>
                 </div>
                 <div class="group">
                     <input type="text" formControlName="email" />
@@ -53,9 +52,9 @@
                     <textarea rows="2" formControlName="message"></textarea>
                     <span class="highlight"></span>
                     <span class="bar"></span>
-                    <label>Message</label>
+                    <label>{{'portfolio_message' | translate}}</label>
                 </div>
-                <app-button (click)="enviar()" [text]="'Enviar'"></app-button>
+                <app-button (click)="enviar()" [text]="'portfolio_send' | translate"></app-button>
             </form>
         </div>
         <!--

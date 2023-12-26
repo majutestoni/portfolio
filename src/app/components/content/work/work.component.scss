@@ -85,26 +85,28 @@ p {
     }
 }
 
-ul {
-  color: var(--primary-color) !important;
+.tecnologies{
+  ul {
+    color: var(--primary-color) !important;
 
-  display: flex;
-  align-items: flex-end;
-  flex-grow: 1;
-  flex-wrap: wrap;
-  padding: 0px;
-  margin: 20px 0px 0px;
-  list-style: none;
+    display: flex;
+    align-items: flex-end;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    padding: 0px;
+    list-style: none;
 
-  li {
-    margin-right: 0.5em;
-    background-color: var(--tag-back);
-    padding: 6px;
-    border: 1px solid var(--tag-border);
-    border-radius: 12px;
-    font-size: 10pt;
+    li {
+      margin-right: 0.5em;
+      background-color: var(--tag-back);
+      padding: 6px;
+      border: 1px solid var(--tag-border);
+      border-radius: 12px;
+      font-size: 10pt;
+    }
   }
 }
+
 .flip-card {
     background-color: transparent;
     width: 300px;

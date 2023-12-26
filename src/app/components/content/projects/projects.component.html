@@ -1,5 +1,5 @@
 <body>
-    <app-title [title]="'Projetos'" [topic]="'0100'"></app-title>
+    <app-title [title]="'portfolio_projects' | translate" [topic]="'0100'"></app-title>
     <div>
         <div class="d-flex flex-column align-items-center">
             <form [formGroup]="formGroup">
@@ -7,20 +7,20 @@
                     <input type="text" formControlName="pesquisa" />
                     <span class="highlight"></span>
                     <span class="bar"></span>
-                    <label>Pesquisar por título</label>
+                    <label>{{'portfolio_projects_input' | translate}}</label>
                 </div>
 
                 <div class="group">
                     <select (change)="searchEnum()" formControlName="stack" class="styled-select">
-                        <option value="" disabled selected>Selecione uma opção</option>
+                        <option value="" disabled selected>{{'portfolio_projects_select' | translate}}</option>
                         <option value="Front">Front</option>
                         <option value="Back">Back</option>
                         <option value="Full">Full</option>
-                        <option value="Outros">Outros</option>
+                        <option value="Outros">{{'portfolio_other' | translate}}</option>
                     </select>
                     <span class="highlight"></span>
                     <span class="bar"></span>
-                    <label>Pesquisar por area</label>
+                    <label>{{'portfolio_projects_label' | translate}}</label>
                 </div>
             </form>
             <app-button [text]="'limpar'" (click)="clean()"></app-button>

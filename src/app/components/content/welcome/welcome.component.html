@@ -1,14 +1,13 @@
 <div class="welcome">
-  <h1 data-aos="fade-right" data-aos-duration="3000">Bem vindo(a)!</h1>
-  <h4 data-aos="fade-up-right"  data-aos-duration="3000">
-    Eu sou a Maju e trabalho como desenvolvedora web full-stack, segue algumas
-    tecnologias que eu conheço/tenho experiencia:
-  </h4>
-  <div data-aos="zoom-out"  data-aos-duration="3000" (click)="emitEvent()" class="more">
-    <a class="arrow-container">
-      <div class="arrow"></div>
-      <div class="arrow"></div>
-      <div class="arrow"></div>
-    </a>
-  </div>
+    <h1 data-aos="fade-right" data-aos-duration="3000">{{ 'portfolio_welcome_title' | translate }}</h1>
+    <h4 data-aos="fade-up-right" data-aos-duration="3000">
+        {{ 'portfolio_welcome_description' | translate }}
+    </h4>
+    <div data-aos="zoom-out" data-aos-duration="3000" (click)="emitEvent()" class="more">
+        <a class="arrow-container">
+            <div class="arrow"></div>
+            <div class="arrow"></div>
+            <div class="arrow"></div>
+        </a>
+    </div>
 </div>

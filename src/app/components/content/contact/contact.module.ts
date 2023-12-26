@@ -7,6 +7,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { TagAModule } from '../../shared/tag-a/tag-a.module';
 import { ContactService } from './contact.service';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { TranslateModule } from '@ngx-translate/core';
 
 
 
@@ -21,7 +22,8 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
     FormsModule,
     ReactiveFormsModule,
     TagAModule,
-    HttpClientModule
+    HttpClientModule,
+    TranslateModule
   ],
   exports: [ContactComponent],
   providers: [ContactService]

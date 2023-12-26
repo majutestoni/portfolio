@@ -1,34 +1,28 @@
 <div class="about">
-  <app-title [title]="'Quem é Maju?'" [topic]="'0010'"></app-title>
+  <app-title [title]="'portfolio_about_title' | translate" [topic]="'0010'"></app-title>
   <div class="style-about">
     <div class="inner">
       <div data-aos="fade-right" data-aos-duration="3000" class="style-text">
         <div>
           <p>
-            Olá pessoas, eu me chamo Maria Júlia Testoni (infelizmente Maju não
-            é um nome)
+            {{'portfolio_about_p1' | translate }}
           </p>
           <p>
-            Atualmente sou estudante de Ciência da Computação na Furb
+            {{'portfolio_about_p2' | translate }}
             <app-tag-a
-              [text]="'(grade)'"
+              [text]="'(' + ('portfolio_about_link' | translate  ) + ')'"
               [link]="
                 'https://www.furb.br/sites/default/files/2022-06/GRADE%20computa%C3%A7ao.pdf'
               "
             ></app-tag-a>
-            e formada com técnico em Mecatronica que fiz integrado ao ensino
-            médio onde tive a oportunidade de conhecer o mundo da tecnologia
-            (como Arduino).
+            {{'portfolio_about_p3' | translate }}
           </p>
 
           <p>
-            Apesar dessa vibe que mistura protoboard, diagramas eletricos e
-            automação o meu interesse é por web, que comecei a codar no fim de
-            2021 com Java.
+            {{'portfolio_about_p4' | translate }}
           </p>
           <p>
-            Mudando de assunto, eu tenho um filho de 4 patas loirinho chamado
-            Fred e no meu tempo livre gosto de ler e ver The Office
+            {{'portfolio_about_p5' | translate }}
           </p>
         </div>
 

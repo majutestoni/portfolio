@@ -1,5 +1,5 @@
 <div class="body">
-    <app-title [title]="'Experiência'" [topic]="'010'"></app-title>
+    <app-title [title]="'portfolio_work' | translate" [topic]="'010'"></app-title>
 
     <div class="row d-flex justify-content-center">
         <div class="flip-card col-sm-12 col-md-4 mt-4" [ngClass]="{ flipped: isFlipped2 }" (click)="toggleFlip2()">
@@ -71,51 +71,52 @@
                 </div>
             </div>
         </div>
-        <!--<div class="flip-card col-sm-12 col-md-4 mt-4" [ngClass]="{ flipped: isFlipped3 }" (click)="toggleFlip3()">
-            <div class="flip-card-inner">
-                <div class="flip-card-front">
-                    <img src="../../../../assets/img/bolsa.jpg" alt="" height="220" />
-                    <h1><strong> Monitora & Pesquisadora</strong></h1>
-                    <span>Furb</span>
-                </div>
-                <div class="flip-card-back">
-                    <h1>John Doe</h1>
-                    <p>Architect & Engineer</p>
-                    <p>We love that guy</p>
-                </div>
-            </div>
-        </div> -->
     </div>
 
     <div class="row d-flex justify-content-center mt-5">
         <div class="card col-10">
             <div class="header">
                 <h1><strong> Entra21 & +Devs2Blu</strong></h1>
-                <h4><strong>2023 - Presente</strong></h4>
+                <h4><strong>2023 - 2024</strong></h4>
             </div>
 
             <div class="description mt-3">
                 <h3>
-                    <strong> O que é o Entra21? </strong>
-                    <app-tag-a [link]="'https://www.entra21.com.br/'" [text]="'Disponivel em'"></app-tag-a>
+                    <strong> {{ 'portfolio_work_entra21' | translate }} </strong>
+                    <app-tag-a
+                        [link]="'https://www.entra21.com.br/'"
+                        [text]="'portfolio_work_disponivel' | translate"
+                    ></app-tag-a>
                 </h3>
                 <h3>
-                    <strong> O que é o +Devs2Blu? </strong>
-                    <app-tag-a [link]="'https://www.devs2blu.com.br/'" [text]="'Disponivel em'"></app-tag-a>
+                    <strong> {{ 'portfolio_work_devs2blu' | translate }} </strong>
+                    <app-tag-a
+                        [link]="'https://www.devs2blu.com.br/'"
+                        [text]="'portfolio_work_disponivel' | translate"
+                    ></app-tag-a>
                 </h3>
 
-                <span class="mt-3">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo quisquam facere ea laboriosam dolorum?
-                    Consectetur, debitis, animi aliquid ad id vel aperiam cum eveniet voluptatem a totam rem dolores. Excepturi?
+                <span class="mt-5">
+                    {{ 'portfolio_work_p1' | translate }}
+                    <strong>{{'portfolio_work_strong'| translate}}</strong>
+                    {{ 'portfolio_work_p2' | translate }}
+
+                    <ul class="mt-2">
+                      <li>{{'portfolio_work_p3' | translate}}</li>
+                      <li>{{'portfolio_work_p4' | translate}}</li>
+                      <li>{{'portfolio_work_p5' | translate}}</li>
+                    </ul>
                 </span>
             </div>
             <div class="tecnologies">
                 <ul>
-                    <li>Java</li>
-                    <li>Angular</li>
-                    <li>HTML&CSS</li>
-                    <li>Javascript&TypeScript</li>
-                    <li>Banco De dados</li>
+                    <li class="mt-1">Java</li>
+                    <li class="mt-1">Lógica</li>
+                    <li class="mt-1">Angular</li>
+                    <li class="mt-1">HTML&CSS</li>
+                    <li class="mt-1">Javascript</li>
+                    <li class="mt-1">Banco De dados</li>
+                    <li class="mt-1">Metodologias Ageis</li>
                 </ul>
             </div>
         </div>

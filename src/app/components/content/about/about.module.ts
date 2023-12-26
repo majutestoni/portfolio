@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { AboutComponent } from './about.component';
 import { TitleModule } from '../../shared/title/title.module';
 import { TagAModule } from '../../shared/tag-a/tag-a.module';
+import { TranslateModule } from '@ngx-translate/core';
 
 
 
@@ -13,7 +14,8 @@ import { TagAModule } from '../../shared/tag-a/tag-a.module';
   imports: [
     CommonModule,
     TitleModule,
-    TagAModule
+    TagAModule,
+    TranslateModule
   ],
   exports: [AboutComponent]
 })

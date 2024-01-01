@@ -8,8 +8,8 @@ import { TranslateModule } from '@ngx-translate/core';
 import { ToggleTime2Module } from '../shared/toggle-time-2/toggle-time-2.module';
 
 @NgModule({
-  declarations: [HeaderComponent],
-  imports: [CommonModule, ButtonModule, TagAModule, ToggleTimeModule, TranslateModule, ToggleTime2Module],
-  exports: [HeaderComponent],
+    declarations: [HeaderComponent],
+    imports: [CommonModule, ButtonModule, TagAModule, ToggleTimeModule, TranslateModule, ToggleTime2Module],
+    exports: [HeaderComponent]
 })
 export class HeaderModule {}

@@ -48,6 +48,7 @@ export class AppComponent implements OnInit {
     }
 
     changeTheme($event: any) {
+      //console.log('teste')
         document.body.classList.toggle('dark-theme');
     }
 }

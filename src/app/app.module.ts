@@ -14,6 +14,7 @@ import { WorkModule } from './components/content/work/work.module';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { HttpClient } from '@angular/common/http';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { ToggleTimeModule } from './components/shared/toggle-time/toggle-time.module';
 
 @NgModule({
     declarations: [AppComponent],
@@ -28,6 +29,7 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
         ContactModule,
         ProjectsModule,
         WorkModule,
+        ToggleTimeModule ,
         TranslateModule.forRoot({
             defaultLanguage: 'pt',
             loader: {

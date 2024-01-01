@@ -1,6 +1,6 @@
 <div class="wrapper">
     <h5 class="efeito">MJ</h5>
-    <div class="bnt-mudarTema">
+<div class="bnt-mudarTema">
         <app-toggle-time (changeTheme)="darkTheme($event)"></app-toggle-time>
     </div>
     <div class="bnt-mudarLingua">
@@ -23,11 +23,13 @@
     <div class="right">
         <div class="menu {{ open ? 'abrir' : '' }}">
             <ul>
-              <div class="switch-button">
-                <input (change)="changeLanguage()" class="switch-button-checkbox" type="checkbox" />
-                <label class="switch-button-label" for=""><span class="switch-button-label-span">Potugues</span></label>
-            </div>
-                <li class="toggle-time"><app-toggle-time (changeTheme)="darkTheme($event)"></app-toggle-time></li>
+                <li>
+                    <div class="switch-button">
+                        <input (change)="changeLanguage()" class="switch-button-checkbox" type="checkbox" />
+                        <label class="switch-button-label" for=""><span class="switch-button-label-span">Potugues</span></label>
+                    </div>
+                </li>
+                <li><app-toggle-time-2 (changeTheme)="darkTheme($event)"></app-toggle-time-2></li>
 
                 <li>
                     <a (click)="goToSection('welcome')">{{ 'portfolio_start' | translate }}</a>

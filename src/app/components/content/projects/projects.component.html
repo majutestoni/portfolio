@@ -23,7 +23,7 @@
                     <label>{{'portfolio_projects_label' | translate}}</label>
                 </div>
             </form>
-            <app-button [text]="'limpar'" (click)="clean()"></app-button>
+            <app-button [text]="'portfolio_clean' | translate" (click)="clean()"></app-button>
         </div>
         <div class="row">
             <div *ngIf="!($filtro | async)" class="row">

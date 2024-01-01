@@ -2,7 +2,8 @@
     "portfolio_other": "Others",
     "portfolio_name": "Name",
     "portfolio_message": "Message",
-    "portfolio_send": "Send",
+    "portfolio_send": "SEND",
+    "portfolio_clean": "CLEAN",
 
     "portfolio_start": "Start",
     "portfolio_about": "About",

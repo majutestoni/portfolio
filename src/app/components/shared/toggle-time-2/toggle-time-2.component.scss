@@ -1,0 +1,49 @@
+body {
+    height: 100%;
+}
+
+body.dark {
+    background: #232c35;
+}
+
+#check-theme {
+    position: absolute;
+    opacity: 0;
+}
+
+.change-theme {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 50px;
+    height: 26px;
+    border-radius: 20px;
+    background: #111;
+    cursor: pointer;
+    padding: 5px;
+    transform: scale(1.5);
+}
+
+i.fa-moon {
+    color: #f1c40f;
+}
+
+i.fa-sun {
+    color: #f39c12;
+}
+
+.ball {
+    position: absolute;
+    background-color: #fff;
+    width: 22px;
+    height: 22px;
+    left: 2px;
+    border-radius: 50%;
+    transform: translateX(0px);
+    transition: transform 0.2s linear;
+}
+
+#check-theme:checked + .change-theme .ball {
+    transform: translateX(24px);
+}

@@ -6,18 +6,20 @@
             <div class="flip-card-inner">
                 <div class="flip-card-front">
                     <img src="../../../../assets/img/dev.jpg" alt="" height="220" />
-                    <h1><strong> Estagiaria de Dev </strong></h1>
+                    <h1><strong> Dev Intern</strong></h1>
                     <span>Senior Sistemas</span>
                 </div>
                 <div class="flip-card-back">
                     <h4><strong> 2022 - 2023</strong></h4>
                     <span>
-                        Atuei na TI interna principalmente como Desenvolvedora Front-end,
+                       {{'portfolio_work_senior' | translate}}
                     </span>
-                    <ul>
-                        <li>Angular</li>
-                        <li>JavaScript</li>
-                        <li>TypeScript</li>
+                    <ul class="list">
+                        <li class="mt-1">Angular</li>
+                        <li class="mt-1">HTML</li>
+                        <li class="mt-1">CSS</li>
+                        <li class="mt-1">JavaScript</li>
+                        <li class="mt-1">TypeScript</li>
                     </ul>
                 </div>
             </div>
@@ -27,48 +29,47 @@
             <div class="flip-card-inner">
                 <div class="flip-card-front">
                     <img src="../../../../assets/img/ux.jpg" alt="" height="220" />
-                    <h1><strong> Product Design</strong></h1>
+                    <h1><strong> Product Design Intern</strong></h1>
                     <span>Ambev Tech</span>
                 </div>
                 <div class="flip-card-back">
-                    <h4><strong>2023 - Presente</strong></h4>
+                    <h4><strong>2023 - 2024</strong></h4>
                     <span>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta autem sapiente reiciendis commodi nihil
-                        facere, fuga est nisi accusantium nemo cum molestias voluptas molestiae dolore iusto consequuntur ratione?
-                        Expedita, eveniet.
+                      {{'portfolio_work_ambev' | translate}}
+
                     </span>
 
-                    <ul>
-                        <li>blabla</li>
-                        <li>blabla</li>
-                        <li>blabla</li>
+                    <ul class="list">
+                        <li class="mt-1">UX</li>
+                        <li class="mt-1">UI</li>
+                        <li class="mt-1">Figma</li>
+                        <li class="mt-1">Pesquisa</li>
                     </ul>
                 </div>
             </div>
         </div>
 
         <div class="flip-card col-sm-12 col-md-4 mt-4" [ngClass]="{ flipped: isFlipped2 }" (click)="toggleFlip2()">
-          <div class="flip-card-inner">
-              <div class="flip-card-front">
-                  <img src="../../../../assets/img/suport.jpg" alt="" height="220" />
-                  <h1><strong> Desenvolvedora Java</strong></h1>
-                  <span>Publica Tecnologia</span>
-              </div>
-              <div class="flip-card-back">
-                  <h4><strong> 2024 - Presente</strong></h4>
-                  <span>
-                      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta autem sapiente reiciendis commodi nihil
-                      facere, fuga est nisi accusantium nemo cum molestias voluptas molestiae dolore iusto consequuntur ratione?
-                      Expedita, eveniet.
-                  </span>
-                  <ul>
-                      <li>blabla</li>
-                      <li>blabla</li>
-                      <li>blabla</li>
-                  </ul>
-              </div>
-          </div>
-      </div>
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="../../../../assets/img/suport.jpg" alt="" height="220" />
+                    <h1><strong> Java Developer</strong></h1>
+                    <span>Publica Tecnologia</span>
+                </div>
+                <div class="flip-card-back">
+                    <h4><strong> 2024 - Presente</strong></h4>
+                    <span>
+                      {{'portfolio_work_publica' | translate}}
+
+                    </span>
+                    <ul class="list">
+                        <li class="mt-1">Java</li>
+                        <li class="mt-1">SQL</li>
+                        <li class="mt-1">SpringBoot</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </div>
 
     <div class="row d-flex justify-content-center mt-5">
@@ -96,18 +97,18 @@
 
                 <span class="mt-5">
                     {{ 'portfolio_work_p1' | translate }}
-                    <strong>{{'portfolio_work_strong'| translate}}</strong>
+                    <strong>{{ 'portfolio_work_strong' | translate }}</strong>
                     {{ 'portfolio_work_p2' | translate }}
 
                     <ul class="mt-2">
-                      <li>{{'portfolio_work_p3' | translate}}</li>
-                      <li>{{'portfolio_work_p4' | translate}}</li>
-                      <li>{{'portfolio_work_p5' | translate}}</li>
+                        <li>{{ 'portfolio_work_p3' | translate }}</li>
+                        <li>{{ 'portfolio_work_p4' | translate }}</li>
+                        <li>{{ 'portfolio_work_p5' | translate }}</li>
                     </ul>
                 </span>
             </div>
             <div class="tecnologies">
-                <ul>
+                <ul class="list">
                     <li class="mt-1">Java</li>
                     <li class="mt-1">Lógica</li>
                     <li class="mt-1">Angular</li>

@@ -11,7 +11,7 @@
     </div>
 
     <div class="big-screen">
-        <app-button [text]="'Curriculo'"></app-button>
+        <app-button [text]="'portfolio_resume' | translate" (click)="openResume()"></app-button>
     </div>
     <div class="burguer">
         <div class="wrapper-menu {{ open ? 'open' : '' }}" (click)="openMenu()">
@@ -47,7 +47,7 @@
                     <a (click)="goToSection('contact')">{{ 'portfolio_contact' | translate }}</a>
                 </li>
                 <li>
-                    <app-button [text]="'Curriculo'"></app-button>
+                    <app-button [text]="'portfolio_resume' | translate" (click)="openResume()"></app-button>
                 </li>
             </ul>
         </div>

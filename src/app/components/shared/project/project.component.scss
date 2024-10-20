@@ -13,6 +13,7 @@
   border-radius: 16px;
   background-color: var(--card-background);
   transition: transform 0.5s;
+  overflow: scroll;
 
   h1 {
     color: var(--primary-color-title);

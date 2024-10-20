@@ -53,4 +53,8 @@ export class HeaderComponent {
     darkTheme(event: any) {
         this.changeTheme.emit(event);
     }
+
+    openResume() {
+        window.open('assets/documents/curriculo.pdf', '_blank');
+    }
 }

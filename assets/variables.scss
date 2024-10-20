@@ -1,0 +1,58 @@
+//$dark-theme;
+$backgroud-primary: #131720;
+$backgroud-secondary: #29125f81;
+$primary-color: #a3a8ae;
+$primary-color-title: #ccd6f6;
+$secondary-color: #996dff;
+
+:root {
+    --backgroud-primary: #f0f2f5;
+    --backgroud-secondary: #ffffff;
+    --backgroud-menu: #fff5e7;
+    --primary-color: #333333;
+    --primary-color-title: #000000;
+    --secondary-color: #ff8c00;
+    --header-background: #ffd9ad80;
+    --card-background: #ffd9ad80;
+    --img-color: #ff8f78;
+    --img-back: url('./img/blue.svg');
+    --button: #0d6efd;
+    --button-edge: linear-gradient(
+        to left,
+        hsl(252.43deg 100% 16%) 0%,
+        hsl(199.9deg 100% 49.68%) 8%,
+        hsl(202.54deg 100% 60.81%) 92%,
+        hsl(249.75deg 100% 16%) 0%
+    );
+
+    --tag-back: rgba(255, 150, 22, 0.529);
+    --tag-border:rgb(177, 97, 0);
+    --back-language:#ffffff96;
+    --select-language: #ffffff
+}
+
+:root .dark-theme {
+    --backgroud-primary: #131720;
+    --backgroud-menu: #1d1e27;
+    --backgroud-secondary: #29125f81;
+    --primary-color: #a3a8ae;
+    --primary-color-title: #ccd6f6;
+    --secondary-color: #996dff;
+    --img-color: #996dff;
+    --header-background: rgb(35 10 92 / 36%);
+    --card-background: #180050;
+    --img-back: url('./img/bg-star.svg');
+    --button: hsl(267, 100%, 47%);
+    --button-edge: linear-gradient(
+        to left,
+        hsl(267, 100%, 16%) 0%,
+        hsl(279, 100%, 32%) 8%,
+        hsl(283, 100%, 32%) 92%,
+        hsl(267, 100%, 16%) 0%
+    );
+
+    --tag-back: rgba(71, 18, 193, 0.36);
+    --tag-border:#996dff;
+    --back-language:#ffffff96;
+    --select-language: #ccd6f6
+}

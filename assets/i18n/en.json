@@ -1,0 +1,54 @@
+{
+    "portfolio_other": "Others",
+    "portfolio_name": "Name",
+    "portfolio_message": "Message",
+    "portfolio_send": "SEND",
+    "portfolio_clean": "CLEAN",
+
+    "portfolio_start": "Start",
+    "portfolio_about": "About",
+    "portfolio_work": "Experience",
+    "portfolio_projects": "Projects",
+    "portfolio_contact": "Contact",
+
+    "portfolio_welcome_title": "Welcome!",
+    "portfolio_welcome_description": "I'm Maju and I work as a full-stack web developer, here are some technologies that I know/have experience with:",
+    "portfolio_resume": "Resume",
+
+    "portfolio_about_title": "Who is Maju?",
+    "portfolio_about_p1": "Hello everyone, my name is Maria Júlia Testoni (unfortunately, Maju is not a name).",
+    "portfolio_about_p2": "I am currently a Computer Science student at Furb.",
+    "portfolio_about_link": "grades",
+    "portfolio_about_p3": "I graduated with a degree in Mechatronics, which I completed as part of my high school education. This is where I had the opportunity to explore the world of technology, including working with Arduino.",
+    "portfolio_about_p4": "Despite this mix of breadboards, electrical diagrams, and automation, my primary interest lies in web development. I started coding with Java at the end of 2021.",
+    "portfolio_about_p5": "On a different note, I have a blond, four-legged son named Fred, and in my free time, I enjoy reading and watching The Office.",
+
+    "portfolio_projects_input": "Search by title",
+    "portfolio_projects_select": "Select an option",
+    "portfolio_projects_label": "Search by area",
+
+    "portfolio_contact_email": "Form received!",
+    "portfolio_contact_email_1": "Now",
+    "portfolio_contact_email_2": "Your responses have been sent! I'll get back to you shortly :)",
+    "portfolio_contact_erro": "Error receiving form!",
+    "portfolio_contact_erro_1": "Error receiving form :( If this continues to happen, please contact me at majuliatestoni@gmail.com.",
+
+    "portfolio_contact_title": "And now?",
+    "portfolio_contact_h1": "Thank you for your visit!",
+    "portfolio_contact_p": "and if you want to give feedback/suggestions or just get in touch with me (by the way, I love to have coffee), there are a few ways:",
+
+    "portfolio_work_entra21": "What is Entra21?",
+    "portfolio_work_devs2blu": "What is +Devs2Blu?",
+    "portfolio_work_disponivel": "Available in",
+    "portfolio_work_p1": "I worked as ",
+    "portfolio_work_strong": "programming instructor ",
+    "portfolio_work_p2": "in both programs.",
+    "portfolio_work_p3": "At +Devs2Blu, I taught the module for 1 month and also had the opportunity to be present during the hackaweek as a teacher.",
+    "portfolio_work_p4": "At Entra21, I took on the responsibility for a class from the beginning to the end of the course, totaling 6 months. The main goal was to guide students with no previous programming knowledge, starting with logic, progressing to Java, Database, and finally covering the area of Web Development, including HTML, CSS, JavaScript, and Angular.",
+    "portfolio_work_p5": "At Entra21, in addition to addressing technical aspects, I focused on enhancing the students' soft skills. I always encouraged commitment and dedication to the course, skills such as public speaking, and provided insights into the job market in the technology sector.",
+    "portfolio_work_senior": "I held the position of Front-end Developer within the internal IT team, where I had the opportunity to have my first exposure to the day-to-day operations of an IT team, agile methodologies, and overall organizational structure.",
+    "portfolio_work_ambev": "I worked as a UX/UI designer with logistics systems, closely involved with the product, and participated in user research.",
+    "portfolio_work_publica": "Java Developer for system development.",
+
+    "portfolio_footer": "Made by "
+}

@@ -1,0 +1,53 @@
+{
+    "portfolio_other": "Outros",
+    "portfolio_name": "Nome",
+    "portfolio_message": "Mensagem",
+    "portfolio_send": "ENVIAR",
+    "portfolio_clean": "LIMPAR",
+
+    "portfolio_start": "Início",
+    "portfolio_about": "Sobre",
+    "portfolio_work": "Experiência",
+    "portfolio_projects": "Projetos",
+    "portfolio_contact": "Contato",
+
+    "portfolio_welcome_title": "Bem-vindo(a)!",
+    "portfolio_welcome_description": "Eu sou a Maju e trabalho como desenvolvedora web full-stack. Seguem algumas tecnologias que eu conheço/tenho experiência:",
+    "portfolio_resume": "Currículo",
+
+    "portfolio_about_title": "Quem é a Maju?",
+    "portfolio_about_p1": "Olá, pessoal! Eu me chamo Maria Júlia Testoni (infelizmente, Maju não é um nome).",
+    "portfolio_about_p2": "Atualmente, sou estudante de Ciência da Computação na Furb.",
+    "portfolio_about_link": "grade",
+    "portfolio_about_p3": " e formada em técnico em Mecatrônica, que fiz integrado ao ensino médio, onde tive a oportunidade de conhecer o mundo da tecnologia (como Arduino).",
+    "portfolio_about_p4": "Apesar dessa vibe que mistura protoboard, diagramas elétricos e automação, meu interesse é por web. Comecei a codar no fim de 2021 com Java.",
+    "portfolio_about_p5": "Mudando de assunto, eu tenho um filho de 4 patas loirinho chamado Fred, e no meu tempo livre gosto de ler e ver The Office.",
+
+    "portfolio_projects_input": "Pesquisar por título",
+    "portfolio_projects_select": "Selecione uma opção",
+    "portfolio_projects_label": "Pesquisar por área",
+
+    "portfolio_contact_title": "E agora?",
+    "portfolio_contact_h1": "Obrigada pela sua visita!",
+    "portfolio_contact_p": "E caso queira dar um feedback/sugestão ou apenas entrar em contato comigo (a propósito, eu adoro tomar café), existem algumas formas:",
+    "portfolio_contact_email": "Formulário recebido!",
+    "portfolio_contact_email_1": "Agora",
+    "portfolio_contact_email_2": "Suas respostas foram enviadas! Logo mais, retorno :)",
+    "portfolio_contact_erro": "Erro ao receber formulário!",
+    "portfolio_contact_erro_1": "Erro ao receber formulário :( Caso continue ocorrendo, entre em contato por meio de majuliatestoni@gmail.com",
+
+    "portfolio_work_entra21": "O que é o Entra21?",
+    "portfolio_work_devs2blu": "O que é o +Devs2Blu?",
+    "portfolio_work_disponivel": "Disponível em",
+    "portfolio_work_p1": "Atuei como ",
+    "portfolio_work_strong": "instrutora de programação ",
+    "portfolio_work_p2": "em ambos os programas.",
+    "portfolio_work_p3": "No +Devs2Blu, lecionei durante 1 mês o módulo e ainda tive a oportunidade de estar presente durante a hackaweek como professora.",
+    "portfolio_work_p4": "No Entra21, assumi a responsabilidade por uma turma desde o início até a conclusão do curso, totalizando 6 meses. O principal objetivo foi orientar alunos sem conhecimento prévio em programação, começando com lógica de programação, avançando para Java, Banco de Dados e, finalmente, abrangendo a parte de Desenvolvimento Web, que inclui HTML, CSS, JavaScript e Angular.",
+    "portfolio_work_p5": "No Entra21, além de abordar os aspectos técnicos, concentrei-me em aprimorar as soft skills dos alunos. Sempre incentivei o comprometimento e a dedicação ao curso, habilidades como comunicação oral em público e fornecendo insights sobre o mercado de trabalho na área de tecnologia.",
+    "portfolio_work_senior": "Estive no papel de Desenvolvedora Front-end dentro da TI interna, onde tive a oportunidade de ter o primeiro contato com o dia-a-dia de uma equipe de TI, metodologias ageis e organização em geral.",
+    "portfolio_work_ambev": "Atuei como UX/UI com sistemas de Logistica, estive por perto do Produto e participei de pesquisas com usuarios",
+    "portfolio_work_publica": "Desenvolvedora Java de sistemas.",
+
+    "portfolio_footer": "Feito por "
+}

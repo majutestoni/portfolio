@@ -48,7 +48,11 @@
     "portfolio_work_p5": "At Entra21, in addition to addressing technical aspects, I focused on enhancing the students' soft skills. I always encouraged commitment and dedication to the course, skills such as public speaking, and provided insights into the job market in the technology sector.",
     "portfolio_work_senior": "I held the position of Front-end Developer within the internal IT team, where I had the opportunity to have my first exposure to the day-to-day operations of an IT team, agile methodologies, and overall organizational structure.",
     "portfolio_work_ambev": "I worked as a UX/UI designer with logistics systems, closely involved with the product, and participated in user research.",
-    "portfolio_work_publica": "Java Developer for system development.",
+    "portfolio_work_publica": "I joined in the E-publica dev team, working on the Processes module, system importation, and more. So far, I have learned Angular Formly, Groovy, and deepened my knowledge in databases, programming and teamwork.",
+    "portfolio_work_furb": "During the project, I not only worked as a developer but also took the opportunity to learn how to build a system from scratch, from the front-end to the database structure. In addition, I was able to work in a team and manage deliverables.",
+    "portfolio_work_furb_title": "Project as a researcher",
+    "portfolio_work_furb_subtitle": "Developed at Furb in 2023",
+
 
     "portfolio_footer": "Made by "
 }
